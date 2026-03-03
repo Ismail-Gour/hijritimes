@@ -1,0 +1,234 @@
+@import url('https://fonts.googleapis.com/css2?family=Amiri:wght@400;700&family=Inter:wght@300;400;500;600;700&display=swap');
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  :root {
+    /* Warm ivory background with emerald/gold Islamic palette */
+    --background: 40 30% 97%;
+    --foreground: 160 30% 15%;
+
+    --card: 40 25% 99%;
+    --card-foreground: 160 30% 15%;
+
+    --popover: 40 25% 99%;
+    --popover-foreground: 160 30% 15%;
+
+    /* Deep emerald green - primary Islamic color */
+    --primary: 160 60% 25%;
+    --primary-foreground: 40 30% 97%;
+
+    /* Warm cream secondary */
+    --secondary: 40 20% 94%;
+    --secondary-foreground: 160 30% 20%;
+
+    --muted: 40 15% 92%;
+    --muted-foreground: 160 15% 45%;
+
+    /* Gold accent for highlights */
+    --accent: 45 80% 50%;
+    --accent-foreground: 160 30% 15%;
+
+    --destructive: 0 70% 50%;
+    --destructive-foreground: 40 30% 97%;
+
+    --border: 40 20% 88%;
+    --input: 40 20% 90%;
+    --ring: 160 60% 25%;
+
+    --radius: 0.75rem;
+
+    /* Custom colors */
+    --emerald: 160 60% 25%;
+    --emerald-light: 160 45% 35%;
+    --emerald-dark: 160 70% 18%;
+    --gold: 45 80% 50%;
+    --gold-light: 45 75% 65%;
+    --gold-dark: 40 85% 40%;
+    --ivory: 40 30% 97%;
+    --cream: 40 25% 94%;
+
+    /* Gradients */
+    --gradient-emerald: linear-gradient(135deg, hsl(160 60% 25%), hsl(160 70% 18%));
+    --gradient-gold: linear-gradient(135deg, hsl(45 80% 50%), hsl(40 85% 40%));
+    --gradient-hero: linear-gradient(180deg, hsl(40 30% 97%) 0%, hsl(40 25% 94%) 100%);
+    --gradient-card: linear-gradient(145deg, hsl(40 25% 99%) 0%, hsl(40 20% 96%) 100%);
+
+    /* Shadows */
+    --shadow-sm: 0 1px 2px hsl(160 30% 15% / 0.05);
+    --shadow-md: 0 4px 12px hsl(160 30% 15% / 0.08);
+    --shadow-lg: 0 8px 30px hsl(160 30% 15% / 0.12);
+    --shadow-gold: 0 4px 20px hsl(45 80% 50% / 0.25);
+
+    --sidebar-background: 40 25% 98%;
+    --sidebar-foreground: 160 30% 20%;
+    --sidebar-primary: 160 60% 25%;
+    --sidebar-primary-foreground: 40 30% 97%;
+    --sidebar-accent: 40 20% 94%;
+    --sidebar-accent-foreground: 160 30% 20%;
+    --sidebar-border: 40 20% 88%;
+    --sidebar-ring: 160 60% 25%;
+  }
+
+  .dark {
+    --background: 160 40% 8%;
+    --foreground: 40 25% 95%;
+
+    --card: 160 35% 12%;
+    --card-foreground: 40 25% 95%;
+
+    --popover: 160 35% 12%;
+    --popover-foreground: 40 25% 95%;
+
+    --primary: 160 50% 45%;
+    --primary-foreground: 160 40% 8%;
+
+    --secondary: 160 30% 18%;
+    --secondary-foreground: 40 25% 90%;
+
+    --muted: 160 25% 20%;
+    --muted-foreground: 40 15% 60%;
+
+    --accent: 45 75% 55%;
+    --accent-foreground: 160 40% 8%;
+
+    --destructive: 0 65% 45%;
+    --destructive-foreground: 40 25% 95%;
+
+    --border: 160 25% 20%;
+    --input: 160 25% 22%;
+    --ring: 160 50% 45%;
+
+    --emerald: 160 50% 45%;
+    --emerald-light: 160 45% 55%;
+    --emerald-dark: 160 55% 35%;
+    --gold: 45 75% 55%;
+    --gold-light: 45 70% 65%;
+    --gold-dark: 40 80% 45%;
+    --ivory: 160 40% 8%;
+    --cream: 160 35% 12%;
+
+    --gradient-emerald: linear-gradient(135deg, hsl(160 50% 45%), hsl(160 55% 35%));
+    --gradient-gold: linear-gradient(135deg, hsl(45 75% 55%), hsl(40 80% 45%));
+    --gradient-hero: linear-gradient(180deg, hsl(160 40% 8%) 0%, hsl(160 35% 12%) 100%);
+    --gradient-card: linear-gradient(145deg, hsl(160 35% 12%) 0%, hsl(160 30% 15%) 100%);
+
+    --shadow-sm: 0 1px 2px hsl(0 0% 0% / 0.2);
+    --shadow-md: 0 4px 12px hsl(0 0% 0% / 0.3);
+    --shadow-lg: 0 8px 30px hsl(0 0% 0% / 0.4);
+    --shadow-gold: 0 4px 20px hsl(45 75% 55% / 0.2);
+
+    --sidebar-background: 160 35% 10%;
+    --sidebar-foreground: 40 25% 90%;
+    --sidebar-primary: 160 50% 45%;
+    --sidebar-primary-foreground: 160 40% 8%;
+    --sidebar-accent: 160 30% 18%;
+    --sidebar-accent-foreground: 40 25% 90%;
+    --sidebar-border: 160 25% 20%;
+    --sidebar-ring: 160 50% 45%;
+  }
+}
+
+@layer base {
+  * {
+    @apply border-border;
+  }
+
+  body {
+    @apply bg-background text-foreground font-sans antialiased;
+    font-feature-settings: "cv11", "ss01";
+  }
+
+  h1, h2, h3, h4 {
+    @apply font-display;
+  }
+}
+
+@layer components {
+  .islamic-pattern {
+    background-image: url("data:image/svg+xml,%3Csvg width='60' height='60' viewBox='0 0 60 60' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath d='M30 0L60 30L30 60L0 30L30 0z' fill='none' stroke='%23166534' stroke-opacity='0.05' stroke-width='0.5'/%3E%3C/svg%3E");
+  }
+
+  .glass-card {
+    @apply bg-card/80 backdrop-blur-md border border-border/50;
+    box-shadow: var(--shadow-md);
+  }
+
+  .gold-glow {
+    box-shadow: var(--shadow-gold);
+  }
+
+  .text-gradient-gold {
+    @apply bg-clip-text text-transparent;
+    background-image: var(--gradient-gold);
+  }
+
+  .countdown-digit {
+    @apply font-display font-bold tabular-nums;
+    font-variant-numeric: tabular-nums;
+  }
+
+  /* Prayer timeline forbidden time stripes */
+  .bg-stripes-red {
+    background-image: repeating-linear-gradient(
+      45deg,
+      transparent,
+      transparent 4px,
+      hsl(0 70% 50% / 0.3) 4px,
+      hsl(0 70% 50% / 0.3) 8px
+    );
+  }
+
+  .bg-stripes-amber {
+    background-image: repeating-linear-gradient(
+      45deg,
+      transparent,
+      transparent 4px,
+      hsl(45 80% 50% / 0.3) 4px,
+      hsl(45 80% 50% / 0.3) 8px
+    );
+  }
+}
+
+@layer utilities {
+  .animate-fade-in {
+    animation: fade-in 0.5s ease-out forwards;
+  }
+
+  .animate-slide-up {
+    animation: slide-up 0.6s ease-out forwards;
+  }
+
+  .animate-pulse-slow {
+    animation: pulse 3s cubic-bezier(0.4, 0, 0.6, 1) infinite;
+  }
+
+  @keyframes fade-in {
+    from { opacity: 0; }
+    to { opacity: 1; }
+  }
+
+  @keyframes slide-up {
+    from { 
+      opacity: 0;
+      transform: translateY(20px);
+    }
+    to { 
+      opacity: 1;
+      transform: translateY(0);
+    }
+  }
+
+  @keyframes shimmer {
+    0% { background-position: -200% 0; }
+    100% { background-position: 200% 0; }
+  }
+
+  .animate-shimmer {
+    background: linear-gradient(90deg, transparent 0%, hsl(var(--gold) / 0.3) 50%, transparent 100%);
+    background-size: 200% 100%;
+    animation: shimmer 2s infinite;
+  }
+}
