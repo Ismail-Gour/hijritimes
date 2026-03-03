@@ -8,7 +8,7 @@
   <url>
     <loc>https://www.hijritime.info/know-about-hijri</loc>
     <changefreq>monthly</changefreq>
-    <priority>0.8</priority>
+    <priority>0.9</priority>
   </url>
   <url>
     <loc>https://www.hijritime.info/hijri-months</loc>
@@ -18,6 +18,6 @@
   <url>
     <loc>https://www.hijritime.info/prayer-times</loc>
     <changefreq>monthly</changefreq>
-    <priority>0.7</priority>
+    <priority>0.75</priority>
   </url>
 </urlset>
