@@ -1,22 +1,22 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
   <url>
-    <loc>https://hijritime.info/</loc>
+    <loc>https://www.hijritime.info/</loc>
     <changefreq>daily</changefreq>
     <priority>1.0</priority>
   </url>
   <url>
-    <loc>https://hijritime.info/know-about-hijri</loc>
+    <loc>https://www.hijritime.info/know-about-hijri</loc>
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
   </url>
   <url>
-    <loc>https://hijritime.info/hijri-months</loc>
+    <loc>https://www.hijritime.info/hijri-months</loc>
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
   </url>
   <url>
-    <loc>https://hijritime.info/prayer-times</loc>
+    <loc>https://www.hijritime.info/prayer-times</loc>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
   </url>
