@@ -12,7 +12,7 @@ interface SEOHeadProps {
  * canonical link, and OG/Twitter tags on mount.
  */
 export function SEOHead({ title, description, canonicalPath, keywords }: SEOHeadProps) {
-  const baseUrl = "https://hijritime.info";
+  const baseUrl = "https://www.hijritime.info";
   const fullUrl = `${baseUrl}${canonicalPath}`;
   const fullTitle = `${title} | HijriTime`;
 
